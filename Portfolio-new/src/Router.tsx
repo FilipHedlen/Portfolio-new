@@ -5,12 +5,13 @@ import ContactPage from "./pages/Contact/ContactPage";
 import ProjectsPage from "./pages/Projects/ProjectsPage"
 import NotFoundPage from "./pages/NotFound/NotFoundPage";
 import AboutPage from "./pages/About/AboutPage";
+import Layout from "./components/PageLayout/Layout";
 
 
 export const Router = createBrowserRouter([
   {
     path: "/",
-   // element: <Layout></Layout>,
+    element: <Layout></Layout>,
     errorElement: <NotFoundPage />,
     children: [
       {
