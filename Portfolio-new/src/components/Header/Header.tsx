@@ -7,7 +7,10 @@ const Header = () => {
     <header className="p-4 bg-header/footer dark:bg-gray-800">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/">
-          <img src="/logo.png" alt="Logo" className="" />
+          <img 
+            src="/logo-2.png" 
+            alt="Logo" 
+          />
         </Link>
         <MobileNavMenu />
         <DesktopNavMenu />

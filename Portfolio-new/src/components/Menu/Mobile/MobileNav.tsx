@@ -13,7 +13,7 @@ const MobileNavMenu = () => {
   };
 
   return (
-    <nav className="lg:flex lg:items-center lg:w-auto lg:space-x-4">
+    <nav className="lg:flex lg:items-center lg:w-auto lg:space-x-4 ">
       <div className="flex items-center justify-between">
         <button
           onClick={toggleMenu}
