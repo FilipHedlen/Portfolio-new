@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-//import Layout from "./components/Layout/Layout"; 
 import HomePage from "./pages/Home/HomePage";
 import ContactPage from "./pages/Contact/ContactPage";
 import ProjectsPage from "./pages/Projects/ProjectsPage"
@@ -11,7 +10,7 @@ import Layout from "./components/PageLayout/Layout";
 export const Router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout></Layout>,
+    element: <Layout />,
     errorElement: <NotFoundPage />,
     children: [
       {

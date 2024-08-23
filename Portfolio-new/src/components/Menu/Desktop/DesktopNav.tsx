@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const DesktopNavMenu = () => {
   return (
     <nav className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-4">
-      <ul className="flex flex-row justify-end font-poppins text-xl text-white">
+      <ul className="flex flex-row justify-end font-poppins text-xl text-gray-900 dark:text-gray-100">
         <li className="mr-5">
           <Link 
             to="/"
