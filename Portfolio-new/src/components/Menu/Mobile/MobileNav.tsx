@@ -27,7 +27,7 @@ const MobileNavMenu = () => {
         </button>
       </div>
       {isOpen && (
-        <div className="fixed top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-50">
+        <div className="fixed top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-50 z-50">
           <div className="bg-gray-200 dark:bg-gray-800 w-[80%] max-w-md rounded-lg shadow-md opacity-100 animate-fade-in-left p-8">
             <ul className="flex flex-col items-center space-y-6 font-poppins text-2xl text-gray-900 dark:text-gray-100">
               <li>
