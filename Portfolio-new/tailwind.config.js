@@ -13,6 +13,8 @@ export default {
         'header/footer': '#759AAB',
         'primary-light': '#e0f7fa',
         'primary-light-bg': '#f4eb97',
+        'primary-grey-hover': '#718096',
+        'primary-light-grey-hover': '#a0aec0',
 
       },
     },

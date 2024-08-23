@@ -7,7 +7,7 @@ const DesktopNavMenu = () => {
         <li className="mr-5">
           <Link 
             to="/"
-            className="hover:text-blue transition duration-100" 
+            className="hover:text-primary-grey-hover hover:dark:text-primary-light-grey-hover transition duration-100" 
           >
             Home
           </Link>
@@ -15,7 +15,7 @@ const DesktopNavMenu = () => {
         <li className="mr-5">
           <Link 
             to="/projects"
-            className="hover:text-blue transition duration-100" 
+            className="hover:text-gray-600 hover:dark:text-gray-500 transition duration-100" 
           >
             Projects
           </Link>
@@ -23,7 +23,7 @@ const DesktopNavMenu = () => {
         <li className="mr-5">
           <Link 
             to="/about"
-            className="hover:text-blue transition duration-100"
+            className="hover:text-gray-600 hover:dark:text-gray-500 transition duration-100"
           >
             About me
           </Link>
@@ -31,7 +31,7 @@ const DesktopNavMenu = () => {
         <li className="mr-5">
           <Link 
             to="/contact"
-            className="hover:text-blue transition duration-100" 
+            className="hover:text-gray-600 hover:dark:text-gray-500 transition duration-100" 
           >
             Contact
           </Link>
