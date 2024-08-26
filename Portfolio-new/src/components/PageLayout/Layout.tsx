@@ -1,17 +1,13 @@
 import { Outlet } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import DarkModeToggle from '../DarkMode/DarkModeToggle';
 
 const Layout = () => {
     return (
-        <div className="min-h-screen bg-primary-light dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+        <div className="min-h-screen bg-primary-light dark:bg-gray-900 text-dark-grey dark:text-light-grey">
           <Header />
-          <main className="relative mb-20">
-            <Outlet />
-          </main>
+          <Outlet />
           <Footer />
-          <DarkModeToggle />
         </div>
     );
 };

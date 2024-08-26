@@ -1,18 +1,40 @@
 import { FaCopyright, FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import DarkModeToggle from "../DarkMode/DarkModeToggle";
 
 const Footer = () => {
   return (
-    <footer className="bg-header/footer dark:bg-gray-800 font-bold p-6 fixed bottom-0 w-full flex justify-center">
-      <p className="text-gray-900 dark:text-gray-100 flex items-center">
+    <footer className="bg-header/footer dark:bg-header/footer-dark font-bold p-6 fixed bottom-0 w-full flex justify-between items-center">
+      <div className="text-dark-grey dark:text-light-grey flex items-center">
         <FaCopyright className="mr-2" /> Filip Hedlén
-      </p>
-      <a href="https://www.linkedin.com/in/filip-hedl%C3%A9n-04b489252/" target="_blank" rel="noopener noreferrer">
-        <FaLinkedin className="text-gray-900 dark:text-gray-100 text-2xl" />
-      </a>
-      <a href="https://github.com/FilipHedlen" target="_blank" rel="noopener noreferrer">
-        <FaGithub className="text-gray-900 dark:text-gray-100 text-2xl" />
-      </a>
-      
+      </div>
+
+      <div className="flex space-x-6 mr-14">
+        <a
+          href="https://www.linkedin.com/in/filip-hedl%C3%A9n-04b489252/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin className="text-dark-grey dark:text-light-grey text-2xl" />
+        </a>
+        <a
+          href="https://github.com/FilipHedlen"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub className="text-dark-grey dark:text-light-grey text-2xl" />
+        </a>
+        <a
+          href="mailto:filip.hedlen@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IoIosMail className="text-dark-grey dark:text-light-grey text-2xl" />
+        </a>
+      </div>
+      <div className="mr-2">
+        <DarkModeToggle />
+      </div>
     </footer>
   );
 };

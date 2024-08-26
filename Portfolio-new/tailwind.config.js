@@ -11,6 +11,7 @@ export default {
         'light-green': '#aaf683',
         'peach': '#FFD97D',
         'header/footer': '#759AAB',
+        'header/footer-dark': '#2d3748',
         'primary-light': '#e0f7fa',
         'primary-light-bg': '#f4eb97',
         'primary-dark-hover': '#a0aec0',
@@ -18,7 +19,6 @@ export default {
         'dark-grey': '#1a202c',
         'light-grey': '#f7fafc',
         'semi-light-grey': '#edf2f7',
-
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
