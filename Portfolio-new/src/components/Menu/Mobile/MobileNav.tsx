@@ -32,7 +32,7 @@ const MobileNavMenu = () => {
           onClick={closeMenu}
         >
           <div className="bg-semi-light-grey dark:bg-gray-800 w-[80%] max-w-md rounded-lg shadow-md opacity-100 animate-fade-in-left p-8">
-            <ul className="flex flex-col items-center space-y-6 font-poppins text-2xl text-dark-grey dark:text-light-grey">
+            <ul className="flex flex-col items-center space-y-6 font-raleway font-bold text-2xl text-dark-grey dark:text-light-grey">
               <li>
                 <Link 
                   to="/" 
