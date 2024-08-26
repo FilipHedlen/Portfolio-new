@@ -13,10 +13,18 @@ export default {
         'header/footer': '#759AAB',
         'primary-light': '#e0f7fa',
         'primary-light-bg': '#f4eb97',
-        'primary-grey-hover': '#718096',
-        'primary-light-grey-hover': '#a0aec0',
+        'primary-dark-hover': '#a0aec0',
+        'primary-light-hover': '#718096',
+        'dark-grey': '#1a202c',
+        'light-grey': '#f7fafc',
+        'semi-light-grey': '#edf2f7',
 
       },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        lora: ['Lora', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
+    }
     },
   },
   plugins: [],

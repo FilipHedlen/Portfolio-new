@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 const DesktopNavMenu = () => {
   return (
     <nav className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-4">
-      <ul className="flex flex-row justify-end font-poppins text-xl text-gray-900 dark:text-gray-100">
+      <ul className="flex flex-row justify-end font-lora font-bold text-xl text-dark-grey dark:text-light-grey">
         <li className="mr-5">
           <Link 
             to="/"
-            className="hover:text-primary-grey-hover hover:dark:text-primary-light-grey-hover transition duration-100" 
+            className="hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100" 
           >
             Home
           </Link>
@@ -15,7 +15,7 @@ const DesktopNavMenu = () => {
         <li className="mr-5">
           <Link 
             to="/projects"
-            className="hover:text-gray-600 hover:dark:text-gray-500 transition duration-100" 
+            className="hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100" 
           >
             Projects
           </Link>
@@ -23,7 +23,7 @@ const DesktopNavMenu = () => {
         <li className="mr-5">
           <Link 
             to="/about"
-            className="hover:text-gray-600 hover:dark:text-gray-500 transition duration-100"
+            className="hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100"
           >
             About me
           </Link>
@@ -31,7 +31,7 @@ const DesktopNavMenu = () => {
         <li className="mr-5">
           <Link 
             to="/contact"
-            className="hover:text-gray-600 hover:dark:text-gray-500 transition duration-100" 
+            className="hover:text-primary-light-hover hover:dark:text-primary-dark-hover  transition duration-100" 
           >
             Contact
           </Link>

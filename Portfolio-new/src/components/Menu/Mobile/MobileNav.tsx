@@ -17,24 +17,27 @@ const MobileNavMenu = () => {
       <div className="flex items-center justify-between">
         <button
           onClick={toggleMenu}
-          className="text-gray-900 dark:text-gray-100 cursor-pointer focus:outline-none lg:hidden z-50"
+          className="text-dark-grey dark:text-light-grey cursor-pointer focus:outline-none lg:hidden z-50"
         >
           <div className="w-6 h-6">
-            <span className={`block bg-gray-900 dark:bg-gray-100 h-1 w-full mb-1 transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-            <span className={`block bg-gray-900 dark:bg-gray-100 h-1 w-full mb-1 transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
-            <span className={`block bg-gray-900 dark:bg-gray-100 h-1 w-full transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+            <span className={`block bg-dark-grey dark:bg-light-grey h-1 w-full mb-1 transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+            <span className={`block bg-dark-grey dark:bg-light-grey h-1 w-full mb-1 transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
+            <span className={`block bg-dark-grey dark:bg-light-grey h-1 w-full transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
           </div>
         </button>
       </div>
       {isOpen && (
-        <div className="fixed top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-50 z-50">
-          <div className="bg-gray-200 dark:bg-gray-800 w-[80%] max-w-md rounded-lg shadow-md opacity-100 animate-fade-in-left p-8">
-            <ul className="flex flex-col items-center space-y-6 font-poppins text-2xl text-gray-900 dark:text-gray-100">
+        <div 
+          className="fixed top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-dark-grey bg-opacity-50 z-50"
+          onClick={closeMenu}
+        >
+          <div className="bg-semi-light-grey dark:bg-gray-800 w-[80%] max-w-md rounded-lg shadow-md opacity-100 animate-fade-in-left p-8">
+            <ul className="flex flex-col items-center space-y-6 font-poppins text-2xl text-dark-grey dark:text-light-grey">
               <li>
                 <Link 
                   to="/" 
                   onClick={() => closeMenu()}
-                  className="hover:text-blue transition duration-100"
+                  className="hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100"
                 >
                   Home
                 </Link>
@@ -43,7 +46,7 @@ const MobileNavMenu = () => {
                 <Link 
                   to="/projects" 
                   onClick={() => closeMenu()}
-                  className="hover:text-blue transition duration-100"
+                  className="hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100"
                 >
                   Projects
                 </Link>
@@ -52,7 +55,7 @@ const MobileNavMenu = () => {
                 <Link
                   to="/about" 
                   onClick={() => closeMenu()}
-                  className="hover:text-blue transition duration-100"
+                  className="hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100"
                 >
                   About me
                 </Link>
@@ -61,7 +64,7 @@ const MobileNavMenu = () => {
                 <Link 
                   to="/contact" 
                   onClick={() => closeMenu()}
-                  className="hover:text-blue transition duration-100"
+                  className="hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100"
                 >
                   Contact
                 </Link>
