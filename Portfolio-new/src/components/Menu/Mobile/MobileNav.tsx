@@ -36,7 +36,7 @@ const MobileNavMenu = () => {
               <li>
                 <Link 
                   to="/" 
-                  onClick={() => closeMenu()}
+                  onClick={closeMenu}
                   className="hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100"
                 >
                   Home
@@ -45,7 +45,7 @@ const MobileNavMenu = () => {
               <li>
                 <Link 
                   to="/projects" 
-                  onClick={() => closeMenu()}
+                  onClick={closeMenu}
                   className="hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100"
                 >
                   Projects
@@ -54,7 +54,7 @@ const MobileNavMenu = () => {
               <li>
                 <Link
                   to="/about" 
-                  onClick={() => closeMenu()}
+                  onClick={closeMenu}
                   className="hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100"
                 >
                   About me
@@ -63,7 +63,7 @@ const MobileNavMenu = () => {
               <li>
                 <Link 
                   to="/contact" 
-                  onClick={() => closeMenu()}
+                  onClick={closeMenu}
                   className="hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100"
                 >
                   Contact
