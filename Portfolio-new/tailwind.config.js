@@ -24,7 +24,7 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
         lora: ['Lora', 'sans-serif'],
         raleway: ['Raleway', 'sans-serif'],
-    }
+      },
     },
   },
   plugins: [],
