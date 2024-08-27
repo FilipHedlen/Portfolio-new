@@ -1,0 +1,35 @@
+export const projects = [
+  {
+    id: 1,
+    title: 'FrostPeak Explorer',
+    description: 'Degree project from my education at Medieinstitutet.',
+    techStack: 'React, Vite, TypeScript, Tailwind, Jest',
+    imgSrc: '/light-logo.png',
+    liveLink: 'https://frostpeak-explorer.onrender.com/',
+    codeLink: 'https://github.com/FilipHedlen/FrostPeak',
+  },
+  {
+    id: 2,
+    title: 'The Zoo',
+    description: 'Individual school project focusing on React and Localstorage.',
+    techStack: 'React, Vite, Localstorage',
+    imgSrc: '...',
+    codeLink: 'https://github.com/FilipHedlen/react-the-zoo',
+  },
+  {
+    id: 3,
+    title: 'Martial arts Quiz',
+    description: 'School project focusing on basic vanilla JavaScript',
+    techStack: 'JavaScript, SASS',
+    imgSrc: '...',
+    codeLink: 'https://github.com/FilipHedlen/js-grundkurs-quiz',
+  },
+  {
+    id: 4,
+    title: 'Match my career',
+    description: 'Group school project made for the swedish authority Arbetsförmedlingen',
+    techStack: "React, SASS, Vite, API's, Arbetsförmedlingen own css framework Digi",
+    imgSrc: '...',
+    codeLink: 'https://github.com/FilipHedlen/match-my-career',
+  },
+]

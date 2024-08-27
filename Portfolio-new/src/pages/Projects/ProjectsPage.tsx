@@ -1,11 +1,12 @@
-import ProjectCards from '../../components/ProjectCards/ProjectCards/ProjectCards'
+import React from 'react';
+import ProjectsCarousel from '../../components/ProjectCards/ProjectCarousel/ProjectCarousel';
 
-const ProjectsPage = () => {
+const ProjectsPage: React.FC = () => {
   return (
-    <div className="flex justify-center my-20">
-      <ProjectCards />  
+    <div>
+      <ProjectsCarousel />
     </div>
-  )
+  );
 }
 
-export default ProjectsPage
+export default ProjectsPage;
