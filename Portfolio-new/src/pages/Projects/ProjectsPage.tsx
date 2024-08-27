@@ -1,8 +1,10 @@
-import React from 'react'
+import ProjectCards from '../../components/ProjectCards/ProjectCards/ProjectCards'
 
 const ProjectsPage = () => {
   return (
-    <div>ProjectsPage</div>
+    <div className="flex justify-center my-20">
+      <ProjectCards />  
+    </div>
   )
 }
 
