@@ -22,15 +22,15 @@ const ProjectCards: React.FC<ProjectProps> = ({ title, description, techStack, i
           <strong>Tech Stack:</strong> {techStack}
         </p>
       </div>
-      <div className="px-6 py-4 flex justify-between">
+      <div className="px-6 py-4 flex justify-center">
         {liveLink && (
           <a 
             href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 py-2 text-sm font-semibold transition duration-300"
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 py-2 mr-3 text-sm font-semibold transition duration-300"
           >
-            Live Page
+            Live
           </a>
         )}
         {codeLink && (
