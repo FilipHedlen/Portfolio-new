@@ -46,13 +46,13 @@ const ProjectsCarousel: React.FC = () => {
       <div className="absolute top-1/2 left-0 right-0 flex justify-between px-5">
         <button
           onClick={handlePrev}
-          className="btn btn-ghost"
+          className="text-5xl hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100"
         >
           ❮
         </button>
         <button
           onClick={handleNext}
-          className="btn btn-ghost"
+          className="text-5xl hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100"
         >
           ❯
         </button>
