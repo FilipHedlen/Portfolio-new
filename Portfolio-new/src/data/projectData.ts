@@ -52,7 +52,7 @@ export const projects = [
   {
     id: 7,
     title: 'Italian Restaurant',
-    description: 'Group school project focusing on existing APIs',
+    description: 'Group school project focusing on APIs',
     techStack: 'React, SASS, Vite, TypeScript, API',
     imgSrc: '/restaurant.png',
     codeLink: 'https://github.com/nanidam/group-7-restaurant',
