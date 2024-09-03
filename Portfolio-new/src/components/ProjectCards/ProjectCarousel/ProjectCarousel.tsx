@@ -14,7 +14,7 @@ const ProjectsCarousel: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="relative min-h-screen w-full max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8">
       <div className="overflow-hidden">
         <div 
           className={`flex transition-transform duration-500 ease-in-out`}
@@ -39,7 +39,7 @@ const ProjectsCarousel: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className="absolute top-1/2 left-0 right-0 flex justify-between px-5">
+      <div className="absolute top-52 left-0 right-0 flex justify-between px-5">
         <button
           onClick={handlePrev}
           className="text-4xl sm:text-5xl hover:text-primary-light-hover hover:dark:text-primary-dark-hover transition duration-100 p-2 sm:p-4"

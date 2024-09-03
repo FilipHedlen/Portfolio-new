@@ -45,7 +45,7 @@ export default {
         bounceLight: 'bounceLight 0.6s ease-in-out',
       },
       backgroundImage: {
-        'light-bg': 'radial-gradient(125% 125% at 50% 10%, #ffffff 40%, #e0f7fa 100%)',
+        'light-bg': 'radial-gradient(125% 125% at 50% 10%, #ffffff 40%, #63e 100%)',
         'dark-bg': 'radial-gradient(circle farthest-side, rgba(255,0,182,0.15), rgba(255,255,255,0))',
       },
     },

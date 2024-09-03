@@ -9,19 +9,19 @@ export const HeroSection = () => {
             <span className="block animate-colorChange">Welcome...</span>
           </h1>
         </div>
-        <h3 className="text-lg text-dark-grey dark:text-gray-300 mb-6 font-lora font-bold">
+        <h3 className="text-lg text-dark-grey dark:text-semi-light-grey mb-6 font-lora font-bold">
           My name is Filip Hedlén and I'm a qualified Front End Developer
         </h3>
         <div className="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4">
           <Link
             to="/projects"
-            className="relative z-10 inline-block px-6 py-3 text-lg font-semibold font-raleway dark:text-light-grey text-dark-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-cyan-dark hover:animate-bounce-light"
+            className="relative z-10 inline-block px-6 py-3 text-lg font-semibold font-raleway dark:text-semi-light-grey text-dark-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-cyan-dark hover:animate-bounce-light"
           >
             <span>My Projects</span>
           </Link>
           <Link
             to="/contact"
-            className="relative z-10 inline-block px-6 py-3 text-lg font-semibold font-raleway dark:text-light-grey text-dark-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-green-dark hover:animate-bounce-light"
+            className="relative z-10 inline-block px-6 py-3 text-lg font-semibold font-raleway dark:text-semi-light-grey text-dark-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-green-dark hover:animate-bounce-light"
           >
             <span>Contact me</span>
           </Link>
