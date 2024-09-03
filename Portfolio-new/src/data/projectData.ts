@@ -39,6 +39,7 @@ export const projects = [
     description: 'School project focusing on Vue',
     techStack: 'Vue, TypeScript, Vite',
     imgSrc: '/tictactoe.png',
+    liveLink: 'https://tickytacktoe.netlify.app/',
     codeLink: 'https://github.com/FilipHedlen/vue-tic-tac-toe/tree/main',
   },
   {
