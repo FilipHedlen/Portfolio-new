@@ -2,7 +2,7 @@ import { HeroSection } from '../../components/Hero/HeroSection';
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col">
+    <div className="">
       <HeroSection />
     </div>
 )}

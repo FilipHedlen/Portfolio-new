@@ -12,8 +12,6 @@ export default {
         'peach': '#FFD97D',
         'header/footer': '#759AAB',
         'header/footer-dark': '#2d3748',
-        'primary-light': '#e0f7fa',
-        'primary-light-bg': '#f4eb97',
         'primary-dark-hover': '#a0aec0',
         'primary-light-hover': '#718096',
         'dark-grey': '#1a202c',
@@ -32,13 +30,19 @@ export default {
       },
       keyframes: {
         colorChange: {
-          '0%': { color: '#ffffff' },
+          '0%': { color: '#e91e63' },
           '50%': { color: '#00bcd4' },
-          '100%': { color: '#ffffff' },
+          '100%': { color: '#e91e63' },
+        },
+        bounceLight: {
+          '0%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+          '100%': { transform: 'translateY(0)' },
         },
       },
       animation: {
         colorChange: 'colorChange 4s ease-in-out infinite',
+        bounceLight: 'bounceLight 0.6s ease-in-out',
       },
       backgroundImage: {
         'light-bg': 'radial-gradient(125% 125% at 50% 10%, #ffffff 40%, #e0f7fa 100%)',
