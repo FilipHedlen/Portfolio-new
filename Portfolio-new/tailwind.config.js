@@ -3,7 +3,7 @@ export default {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "class",
+  darkMode: "class", // Enable dark mode using a class
   theme: {
     extend: {
       colors: {
@@ -38,6 +38,10 @@ export default {
       animation: {
         slideIn: 'slideIn 0.5s ease-in-out forwards',
         slideOut: 'slideOut 0.5s ease-in-out forwards',
+      },
+      backgroundImage: {
+        'light-bg': 'radial-gradient(125% 125% at 50% 10%, #fff 40%, #63e 100%)',
+        'dark-bg': 'radial-gradient(circle farthest-side, rgba(255,0,182,0.15), rgba(255,255,255,0))',
       },
     },
   },

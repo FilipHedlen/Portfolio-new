@@ -4,7 +4,7 @@ import DesktopNavMenu from '../Menu/Desktop/DesktopNav';
 
 const Header = () => {
   return (
-    <header className="p-4 bg-header/footer dark:bg-header/footer-dark">
+    <header className="p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/">
           <img
