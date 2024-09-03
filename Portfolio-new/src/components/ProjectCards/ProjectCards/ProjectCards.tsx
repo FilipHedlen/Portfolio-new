@@ -11,60 +11,48 @@ type ProjectProps = {
 
 const ProjectCards: React.FC<ProjectProps> = ({ title, description, techStack, imgSrc, liveLink, codeLink }) => {
   return (
-    <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md rounded-lg overflow-hidden shadow-lg group mx-auto my-4">
-      {/* Background Image and Overlay */}
-      <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-        style={{ backgroundImage: `url(${imgSrc})` }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-85 transition-opacity duration-300"></div>
-      </div>
+    <article className="relative mx-auto max-w-xs sm:max-w-sm lg:max-w-md rounded-lg overflow-hidden shadow-xl bg-cover bg-center group cursor-pointer transform transition-transform duration-500 hover:-translate-y-2" style={{ backgroundImage: `url(${imgSrc})` }}>
+      
+      <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-75 transition-opacity duration-300"></div>
 
-      {/* Card Content */}
-      <div className="relative p-6 sm:p-8 h-64 sm:h-72 lg:h-80 min-h-[20rem] flex flex-col justify-between text-center z-10">
-        {/* Title - Always visible */}
-        <div className="font-bold text-lg sm:text-xl lg:text-2xl mb-2 text-white">
+      <div className="relative p-6 sm:p-8 min-h-[20rem] flex flex-col justify-between text-center z-10">
+
+        <h1 className="text-white text-2xl sm:text-3xl mb-4 transform transition-transform duration-300">
           {title}
-        </div>
+        </h1>
 
-        {/* Description, Tech Stack, and Buttons */}
-        <div className="w-full flex flex-col items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          {/* Description */}
-          <p className="text-white text-sm sm:text-base mb-2 sm:mb-4">
-            {description}
-          </p>
+        <p className="opacity-0 group-hover:opacity-80 text-white text-sm sm:text-xl mb-4 transform transition-opacity duration-500">
+          {description}
+        </p>
 
-          {/* Tech Stack */}
-          <p className="text-gray-200 text-xs sm:text-sm mb-2 sm:mb-4">
-            <strong>Tech Stack:</strong> {techStack}
-          </p>
+        <p className="opacity-0 group-hover:opacity-75 text-white text-sm sm:text-xl mb-4 transform transition-opacity duration-500">
+          Tech stack: {techStack}
+        </p>
 
-          {/* Buttons */}
-          <div className="flex justify-center space-x-4 mt-4">
-            {liveLink && (
-              <a
-                href={liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 py-2 text-xs sm:text-sm font-semibold transition duration-300"
-              >
-                Live
-              </a>
-            )}
-            {codeLink && (
-              <a
-                href={codeLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-700 hover:bg-gray-800 text-white rounded-full px-4 py-2 text-xs sm:text-sm font-semibold transition duration-300"
-              >
-                Code
-              </a>
-            )}
-          </div>
+        <div className="flex justify-center space-x-4 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          {liveLink && (
+            <a
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 py-2 text-xs sm:text-sm font-semibold transition duration-300"
+            >
+              Live
+            </a>
+          )}
+          {codeLink && (
+            <a
+              href={codeLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-700 hover:bg-gray-800 text-white rounded-full px-4 py-2 text-xs sm:text-sm font-semibold transition duration-300"
+            >
+              Code
+            </a>
+          )}
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

@@ -22,6 +22,7 @@ export const projects = [
     description: 'School project focusing on basic vanilla JavaScript',
     techStack: 'JavaScript, SASS, Vite',
     imgSrc: '/quiz.png',
+    liveLink: 'https://martialartsquiz.netlify.app/',
     codeLink: 'https://github.com/FilipHedlen/js-grundkurs-quiz',
   },
   {
