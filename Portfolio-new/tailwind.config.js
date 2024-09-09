@@ -39,10 +39,20 @@ export default {
           '50%': { transform: 'translateY(-10px)' },
           '100%': { transform: 'translateY(0)' },
         },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        slideIn: {
+          '0%': { transform: 'translateY(-50px)', opacity: 0 },
+          '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
       },
       animation: {
         colorChange: 'colorChange 4s ease-in-out infinite',
         bounceLight: 'bounceLight 0.6s ease-in-out',
+        fadeIn: 'fadeIn 2.5s ease-out',
+        slideIn: 'slideIn 2.5s ease-out',
       },
       backgroundImage: {
         'light-bg': 'radial-gradient(125% 125% at 50% 10%, #ffffff 40%, #63e 100%)',
