@@ -4,8 +4,14 @@ import { projects } from '../../../data/projectData';
 
 const ProjectsCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  
   const touchStartX = useRef<number>(0);
   const touchEndX = useRef<number>(0);
+
+  const touchStartTime = useRef<number>(0);
+
+  const swipeThreshold = 50; // Minimum distance in pixels to be considered a swipe
+  const tapThreshold = 200; // Maximum time in milliseconds to be considered a tap
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? projects.length - 1 : prevIndex - 1));
@@ -17,6 +23,7 @@ const ProjectsCarousel: React.FC = () => {
 
   const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
     touchStartX.current = e.touches[0].clientX;
+    touchStartTime.current = Date.now();
   };
 
   const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
@@ -24,10 +31,16 @@ const ProjectsCarousel: React.FC = () => {
   };
 
   const handleTouchEnd = () => {
-    if (touchStartX.current - touchEndX.current > 50) {
-      handleNext(); // Swipe left
-    } else if (touchEndX.current - touchStartX.current > 50) {
-      handlePrev(); // Swipe right
+    const touchEndTime = Date.now();
+    const touchDuration = touchEndTime - touchStartTime.current;
+
+    if (touchDuration < tapThreshold) {
+      // Handle tap event
+      if (touchStartX.current - touchEndX.current > swipeThreshold) {
+        handleNext(); // Swipe left
+      } else if (touchEndX.current - touchStartX.current > swipeThreshold) {
+        handlePrev(); // Swipe right
+      }
     }
   };
 

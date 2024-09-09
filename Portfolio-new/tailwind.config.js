@@ -52,7 +52,7 @@ export default {
         colorChange: 'colorChange 4s ease-in-out infinite',
         bounceLight: 'bounceLight 0.6s ease-in-out',
         fadeIn: 'fadeIn 2.5s ease-out',
-        slideIn: 'slideIn 2.5s ease-out',
+        slideIn: 'slideIn 1s ease-out',
       },
       backgroundImage: {
         'light-bg': 'radial-gradient(125% 125% at 50% 10%, #ffffff 40%, #63e 100%)',
