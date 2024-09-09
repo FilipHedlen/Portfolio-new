@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export const HeroSection = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 lg:px-16 bg-light-bg dark:bg-dark-bg">
-      <div className="text-center lg:absolute lg:left-[26%] flex flex-col items-center justify-center lg:mt-0">
+      <div className="text-center">
         <header className="text-4xl lg:text-6xl font-bold text-dark-grey dark:text-light-grey mb-5 animate-fadeIn">
           <h1 className="overflow-hidden whitespace-nowrap">
             <span className="block animate-colorChange">Welcome...</span>

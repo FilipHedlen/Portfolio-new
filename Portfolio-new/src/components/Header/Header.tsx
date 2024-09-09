@@ -4,8 +4,7 @@ import DesktopNavMenu from '../Menu/Desktop/DesktopNav';
 
 const Header = () => {
   return (
-    <header className="p-4">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="p-4 bg-inherit fixed top-0 container mx-auto flex justify-between items-center">
         <Link to="/">
           <img
             src="/light-logo.png"
@@ -20,7 +19,6 @@ const Header = () => {
         </Link>
         <MobileNavMenu />
         <DesktopNavMenu />
-      </div>
     </header>
   );
 };
