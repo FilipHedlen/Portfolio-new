@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export const HeroSection = () => {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 lg:px-16 bg-light-bg dark:bg-dark-bg">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 lg:px-16 bg-light-bg dark:bg-dark-bg z-10">
       <div className="text-center">
         <header className="text-4xl lg:text-6xl font-bold text-dark-grey dark:text-light-grey mb-5 animate-fadeIn">
           <h1 className="overflow-hidden whitespace-nowrap">
@@ -15,13 +15,13 @@ export const HeroSection = () => {
         <nav className="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4 animate-fadeIn">
           <Link
             to="/projects"
-            className="relative inline-block px-6 py-3 text-lg font-semibold font-raleway dark:text-semi-light-grey text-dark-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-cyan-dark hover:animate-bounce-light"
+            className="px-6 py-3 text-lg font-semibold font-raleway dark:text-semi-light-grey text-dark-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-cyan-dark hover:animate-bounce-light"
           >
             <span className="animate-slideIn">My Projects</span>
           </Link>
           <Link
             to="/contact"
-            className="relative inline-block px-6 py-3 text-lg font-semibold font-raleway dark:text-semi-light-grey text-dark-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-green-dark hover:animate-bounce-light"
+            className="px-6 py-3 text-lg font-semibold font-raleway dark:text-semi-light-grey text-dark-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-green-dark hover:animate-bounce-light"
           >
             <span className="animate-slideIn">Contact me</span>
           </Link>
