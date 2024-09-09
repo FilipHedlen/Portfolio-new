@@ -15,21 +15,21 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin className="text-dark-grey dark:text-light-grey text-2xl" />
+          <FaLinkedin className="text-dark-grey dark:text-light-grey text-2xl hover:text-primary-light-hover hover:dark:text-primary-dark-hover"/>
         </a>
         <a
           href="https://github.com/FilipHedlen"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className="text-dark-grey dark:text-light-grey text-2xl" />
+          <FaGithub className="text-dark-grey dark:text-light-grey text-2xl hover:text-primary-light-hover hover:dark:text-primary-dark-hover"/>
         </a>
         <a
           href="mailto:filip.hedlen@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <IoIosMail className="text-dark-grey dark:text-light-grey text-2xl" />
+          <IoIosMail className="text-dark-grey dark:text-light-grey text-2xl hover:text-primary-light-hover hover:dark:text-primary-dark-hover"/>
         </a>
       </div>
       <div className="mr-2">
