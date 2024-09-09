@@ -4,7 +4,7 @@ import { projects } from '../../../data/projectData';
 
 const ProjectsCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const touchStartX = useRef<number>(0);
   const touchEndX = useRef<number>(0);
 
