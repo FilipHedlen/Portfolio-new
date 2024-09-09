@@ -45,23 +45,22 @@ const ProjectsCarousel: React.FC = () => {
   };
 
   return (
-    <div
-      className="relative min-h-screen w-full max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8"
+    <section
+      className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      <div className="overflow-hidden">
+      <div className="overflow-hidden flex items-center justify-center">
         <div
-          className={`flex transition-transform duration-500 ease-in-out`}
+          className="flex transition-transform duration-500 ease-in-out mt-28"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {projects.map((project, index) => (
-            <div
+            <article
               id={`slide${index + 1}`}
-              className="carousel-item w-full flex justify-center my-10 sm:my-20"
+              className="flex-shrink-0 w-full flex justify-center my-10 sm:my-20"
               key={project.id}
-              style={{ minWidth: "100%" }}
             >
               <ProjectCards
                 title={project.title}
@@ -71,25 +70,27 @@ const ProjectsCarousel: React.FC = () => {
                 liveLink={project.liveLink}
                 codeLink={project.codeLink}
               />
-            </div>
+            </article>
           ))}
         </div>
       </div>
-      <div className="absolute top-52 left-0 right-0 justify-between px-5 hidden sm:flex">
+      <div className="absolute top-1/2 justify-between px-4 sm:px-6 hidden sm:flex">
         <button
           onClick={handlePrev}
           className="text-4xl sm:text-5xl text-dark-grey dark:text-light-grey hover:text-primary-light-hover dark:hover:text-primary-dark-hover transition duration-100 p-2 sm:p-4"
+          aria-label="Previous Slide"
         >
           ❮
         </button>
         <button
           onClick={handleNext}
           className="text-4xl sm:text-5xl text-dark-grey dark:text-light-grey hover:text-primary-light-hover dark:hover:text-primary-dark-hover transition duration-100 p-2 sm:p-4"
+          aria-label="Next Slide"
         >
           ❯
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

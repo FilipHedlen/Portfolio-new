@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 
 const Layout = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden bg-light-bg dark:bg-dark-bg">
       <Header />
       <main>
         <Outlet />

@@ -3,9 +3,7 @@ import ProjectsCarousel from '../../components/ProjectCards/ProjectCarousel/Proj
 
 const ProjectsPage: React.FC = () => {
   return (
-    <div>
-      <ProjectsCarousel />
-    </div>
+    <ProjectsCarousel />
   );
 }
 

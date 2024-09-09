@@ -28,10 +28,10 @@ const MobileNavMenu = () => {
       </div>
       {isOpen && (
         <div 
-          className="fixed top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-dark-grey bg-opacity-80 z-50"
+          className="fixed top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-dark-grey bg-opacity-80 z-10"
           onClick={closeMenu}
         >
-          <div className="bg-semi-light-grey dark:bg-gray-800 w-[100%] max-w-md rounded-lg shadow-md opacity-100 animate-slideIn p-8">
+          <div className="bg-semi-light-grey dark:bg-gray-800 w-[100%] max-w-md rounded-lg shadow-md opacity-100 animate-slideIn p-8 z-100">
             <ul className="flex flex-col items-center space-y-6 font-raleway font-bold text-2xl text-dark-grey dark:text-light-grey">
               <li className="border-b-4 border-dark-grey dark:border-light-grey">
                 <Link 

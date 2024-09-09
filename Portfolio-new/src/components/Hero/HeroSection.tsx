@@ -15,13 +15,13 @@ export const HeroSection = () => {
         <nav className="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4 animate-fadeIn">
           <Link
             to="/projects"
-            className="relative z-10 inline-block px-6 py-3 text-lg font-semibold font-raleway dark:text-semi-light-grey text-dark-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-cyan-dark hover:animate-bounce-light"
+            className="relative inline-block px-6 py-3 text-lg font-semibold font-raleway dark:text-semi-light-grey text-dark-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-cyan-dark hover:animate-bounce-light"
           >
             <span className="animate-slideIn">My Projects</span>
           </Link>
           <Link
             to="/contact"
-            className="relative z-10 inline-block px-6 py-3 text-lg font-semibold font-raleway dark:text-semi-light-grey text-dark-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-green-dark hover:animate-bounce-light"
+            className="relative inline-block px-6 py-3 text-lg font-semibold font-raleway dark:text-semi-light-grey text-dark-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-green-dark hover:animate-bounce-light"
           >
             <span className="animate-slideIn">Contact me</span>
           </Link>
