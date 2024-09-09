@@ -33,7 +33,7 @@ const MobileNavMenu = () => {
         >
           <div className="bg-semi-light-grey dark:bg-gray-800 w-[100%] max-w-md rounded-lg shadow-md opacity-100 animate-slideIn p-8">
             <ul className="flex flex-col items-center space-y-6 font-raleway font-bold text-2xl text-dark-grey dark:text-light-grey">
-              <li>
+              <li className="border-solid border-b-4 border-dark-grey">
                 <Link 
                   to="/" 
                   onClick={closeMenu}
@@ -42,7 +42,7 @@ const MobileNavMenu = () => {
                   Home
                 </Link>
               </li>
-              <li>
+              <li className="border-solid border-b-4 border-dark-grey">
                 <Link 
                   to="/projects" 
                   onClick={closeMenu}
@@ -51,7 +51,7 @@ const MobileNavMenu = () => {
                   Projects
                 </Link>
               </li>
-              <li>
+              <li className="border-solid border-b-4 border-dark-grey">
                 <Link
                   to="/about" 
                   onClick={closeMenu}
@@ -60,7 +60,7 @@ const MobileNavMenu = () => {
                   About me
                 </Link>
               </li>
-              <li>
+              <li className="border-solid border-b-4 border-dark-grey">
                 <Link 
                   to="/contact" 
                   onClick={closeMenu}
