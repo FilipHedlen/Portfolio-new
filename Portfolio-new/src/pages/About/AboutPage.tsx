@@ -1,8 +1,8 @@
-import React from 'react'
+import AboutMe from '../../components/About/AboutMe'
 
 const AboutPage = () => {
   return (
-    <div className='min-h-screen'>AboutPage</div>
+    <AboutMe />
   )
 }
 

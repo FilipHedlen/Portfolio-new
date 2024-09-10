@@ -47,12 +47,33 @@ export default {
           '0%': { transform: 'translateY(-50px)', opacity: 0 },
           '100%': { transform: 'translateY(0)', opacity: 1 },
         },
+        textSlide: {
+          '0%, 16%': {
+          transform: 'translateY(0%)',
+          },
+          '20%, 36%': {
+          transform: 'translateY(-16.66%)',
+          },
+          '40%, 56%': {
+          transform: 'translateY(-33.33%)',
+          },
+          '60%, 76%': {
+          transform: 'translateY(-50%)',
+          },
+          '80%, 96%': {
+          transform: 'translateY(-66.66%)',
+          },
+          '100%': {
+          transform: 'translateY(-83.33%)',
+          },
+        },
       },
       animation: {
         colorChange: 'colorChange 4s ease-in-out infinite',
         bounceLight: 'bounceLight 0.6s ease-in-out',
         fadeIn: 'fadeIn 2.5s ease-out',
         slideIn: 'slideIn 1s ease-out',
+        textSlide: 'textSlide 12s cubic-bezier(0.83, 0, 0.17, 1) infinite',
       },
       backgroundImage: {
         'light-bg': 'radial-gradient(125% 125% at 50% 10%, #ffffff 40%, #63e 100%)',
