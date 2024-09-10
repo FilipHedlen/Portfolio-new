@@ -41,8 +41,8 @@ const AboutMe = () => {
 
         <div className="flex justify-center lg:mt-24 lg:mb-10">
           <img
-            className="w-2/3 h-auto max-w-xs object-cover object-center shadow-lg grayscale hover:grayscale-0
-              lg:max-w-md lg:w-1/2 xl:w-2/5 lg:ml-4 xl:ml-6"
+            className="w-2/3 h-auto max-w-lg object-cover object-center shadow-lg grayscale hover:grayscale-0
+              lg:max-w-lg lg:w-1/2 xl:w-2/5 lg:ml-4 xl:ml-6"
             style={{ clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 20% 100%, 0% 38%)' }}
             src="/jag-1.jpg"
             alt="A creative polygon-shaped image of me"
