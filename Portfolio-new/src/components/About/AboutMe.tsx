@@ -1,9 +1,9 @@
 const AboutMe = () => {
   return (
-    <section className="relative bg-inherit overflow-hidden mt-10 animate-slideIn">
+    <section className="relative bg-inherit overflow-hiddenanimate-slideIn">
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center lg:items-start lg:gap-6">
         <article className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <main className="mt-10 mb-20 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <main className="mb-20 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h2 className="my-6 mb-10 text-2xl tracking-tight font-extrabold text-dark-grey dark:text-light-grey sm:text-3xl md:text-4xl">
                 About Me

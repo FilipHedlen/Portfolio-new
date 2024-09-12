@@ -4,7 +4,7 @@ import DesktopNavMenu from '../Menu/Desktop/DesktopNav';
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 p-4 bg-inherit container mx-auto flex justify-between items-center z-20">
+    <header className="top-0 left-0 right-0 p-4 bg-inherit container mx-auto flex justify-between items-center z-20 h-auto">
       <Link to="/">
         <img
           src="/light-logo.png"
