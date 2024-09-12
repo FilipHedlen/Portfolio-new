@@ -2,7 +2,9 @@ import { HeroSection } from '../../components/Hero/HeroSection';
 
 const HomePage = () => {
   return (
-    <HeroSection />
+    <div className="bg inherit">
+        <HeroSection />
+    </div>
   )
 }
 
