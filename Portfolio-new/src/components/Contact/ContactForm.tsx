@@ -25,7 +25,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full sm:w-[90%] max-w-lg mx-8 my-16">
+    <div className="w-full max-w-lg mx-auto my-16 font-lora">
       {isMailSent ? (
         <div className="bg-transparent mx-auto p-4 mb-4 width flex justify-center w-[50%]">
           <h3 className="text-2xl font-lora text-dark-grey dark:text-light-grey">
@@ -39,9 +39,9 @@ const ContactForm = () => {
               <label className="font-medium">Full name</label>
               <input
                 type="text"
-                name="fullName"
+                name="name"
                 required
-                className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                className="w-full mt-2 px-3 py-2 text-dark-grey dark:text-light-grey bg-transparent outline-none border border-dark-grey dark:border-light-grey focus:border-cyan-dark shadow-sm rounded-lg"
               />
             </div>
             <div>
@@ -50,7 +50,7 @@ const ContactForm = () => {
                 type="email"
                 name="email"
                 required
-                className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                className="w-full mt-2 px-3 py-2 text-dark-grey dark:text-light-grey bg-transparent outline-none border border-dark-grey dark:border-light-grey focus:border-cyan-dark shadow-sm rounded-lg"
               />
             </div>
             <div>
@@ -58,7 +58,7 @@ const ContactForm = () => {
               <textarea
                 name="message"
                 required
-                className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                className="w-full mt-2 h-36 px-3 py-2 text-dark-grey dark:text-light-grey resize-none appearance-none bg-transparent outline-none border border-dark-grey dark:border-light-grey focus:border-cyan-dark shadow-sm rounded-lg"
               />
             </div>
             <button
