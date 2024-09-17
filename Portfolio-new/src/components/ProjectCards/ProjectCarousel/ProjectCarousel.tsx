@@ -15,7 +15,7 @@ const ProjectsCarousel: React.FC = () => {
   };
 
   return (
-    <section className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center my-10 z-10">
+    <section className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center xl:mt-16 mt-20 z-10">
       <div className="relative w-full flex items-center justify-center">
         <button
           onClick={handlePrev}
@@ -34,7 +34,7 @@ const ProjectsCarousel: React.FC = () => {
               {projects.map((project, index) => (
                 <article
                   id={`slide${index + 1}`}
-                  className="flex-shrink-0 w-full flex justify-center my-10 sm:my-20"
+                  className="flex-shrink-0 w-full flex justify-center"
                   key={project.id}
                 >
                   <ProjectCards
