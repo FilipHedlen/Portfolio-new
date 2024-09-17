@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 lg:px-16 z-10 bg-frontend-bg bg-origin-border bg-cover transition-all duration-500 dark:brightness-75 brightness-100">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 lg:px-16 z-10 bg-frontend-bg bg-cover bg-center sm:bg-bottom lg:bg-center transition-all duration-500 dark:brightness-75 brightness-100">
       <div className="absolute inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 z-0"></div>
 
       <div className="relative z-10 text-center">
