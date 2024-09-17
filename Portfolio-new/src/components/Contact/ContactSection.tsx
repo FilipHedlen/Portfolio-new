@@ -54,14 +54,14 @@ export const ContactSection = () => {
     ]
 
     return (
-        <main className="py-14">
+        <main className="py-14 animate-spin">
             <div className="max-w-screen-xl mx-auto px-4 text-dark-grey dark:text-light-grey md:px-8">
                 <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
                     <div className="max-w-lg space-y-3">
                         <p className="text-dark-grey dark:text-light-grey text-3xl font-semibold sm:text-4xl">
                             Contact Information
                         </p>
-                        <p>
+                        <p className="mb-20">
                             Feel free to contact me about anything!
                         </p>
                         <div>

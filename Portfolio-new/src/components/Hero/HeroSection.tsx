@@ -1,3 +1,4 @@
+import { PiHandWaving } from 'react-icons/pi';
 import { Link } from 'react-router-dom';
 
 export const HeroSection = () => {
@@ -8,7 +9,10 @@ export const HeroSection = () => {
       <div className="relative z-10 text-center">
         <header className="text-4xl lg:text-6xl font-bold text-dark-grey dark:text-light-grey mb-5 animate-fadeIn">
           <h1 className="overflow-hidden whitespace-nowrap">
-            <span className="block animate-colorChange">Welcome...</span>
+            <span className="inline-block animate-colorChange">
+                Welcome!
+                <PiHandWaving className="inline-block animate-wavingHand ml-2" />
+            </span>
           </h1>
         </header>
 

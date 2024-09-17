@@ -29,6 +29,14 @@ export default {
         raleway: ['Raleway', 'sans-serif'],
       },
       keyframes: {
+        flipIn: {
+          '0%': {transform: 'rotateX(90deg)', opacity: '0' },
+          '100%': { transform: 'rotateX(0deg)',opacity: '1' },
+        },
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
         colorChange: {
           '0%': { color: '#e91e63' },
           '50%': { color: '#00bcd4' },
@@ -48,24 +56,22 @@ export default {
           '100%': { transform: 'translateY(0)', opacity: 1 },
         },
         textSlide: {
-          '0%, 16%': {
-          transform: 'translateY(0%)',
-          },
-          '20%, 36%': {
-          transform: 'translateY(-16.66%)',
-          },
-          '40%, 56%': {
-          transform: 'translateY(-33.33%)',
-          },
-          '60%, 76%': {
-          transform: 'translateY(-50%)',
-          },
-          '80%, 96%': {
-          transform: 'translateY(-66.66%)',
-          },
-          '100%': {
-          transform: 'translateY(-83.33%)',
-          },
+          '0%, 16%': { transform: 'translateY(0%)' },
+          '20%, 36%': { transform: 'translateY(-16.66%)' },
+          '40%, 56%': { transform: 'translateY(-33.33%)' },
+          '60%, 76%': { transform: 'translateY(-50%)' },
+          '80%, 96%': { transform: 'translateY(-66.66%)' },
+          '100%': { transform: 'translateY(-83.33%)' },
+        },
+        wave: {
+          '0%': { transform: 'rotate(0.0deg)' },
+          '10%': { transform: 'rotate(14deg)' },
+          '20%': { transform: 'rotate(-8deg)' },
+          '30%': { transform: 'rotate(14deg)' },
+          '40%': { transform: 'rotate(-4deg)' },
+          '50%': { transform: 'rotate(10.0deg)' },
+          '60%': { transform: 'rotate(0.0deg)' },
+          '100%': { transform: 'rotate(0.0deg)' },
         },
       },
       animation: {
@@ -74,6 +80,9 @@ export default {
         fadeIn: 'fadeIn 2.5s ease-out',
         slideIn: 'slideIn 1s ease-out',
         textSlide: 'textSlide 12s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        spin: 'spin 0.5s linear',
+        flipIn: 'flipIn 2.0s ease-out',
+        wavingHand: 'wave 2s linear infinite',
       },
       backgroundImage: {
         'light-bg': 'radial-gradient(125% 125% at 50% 10%, #ffffff 40%, #63e 100%)',
