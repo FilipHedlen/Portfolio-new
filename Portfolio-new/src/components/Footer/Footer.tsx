@@ -4,7 +4,7 @@ import DarkModeToggle from "../DarkMode/DarkModeToggle";
 
 const Footer = () => {
   return (
-    <footer className="bottom-0 left-0 right-0 p-4 bg-inherit container mx-auto flex justify-between items-center z-20 h-auto">
+    <footer className="sticky bottom-0 left-0 right-0 p-4 container mx-auto flex justify-between items-center z-20 h-auto">
 
       <div className="text-dark-grey dark:text-light-grey flex items-center font-bold">
         <FaCopyright className="mr-2" />
