@@ -73,6 +73,10 @@ export default {
           '60%': { transform: 'rotate(0.0deg)' },
           '100%': { transform: 'rotate(0.0deg)' },
         },
+        zoomOutBlur: {
+          '0%': { transform: 'scale(1.2)',filter: 'blur(10px)', opacity: '0' },
+          '100%': { transform: 'scale(1)', filter: 'blur(0)', opacity: '1' },
+        },
       },
       animation: {
         colorChange: 'colorChange 4s ease-in-out infinite',
@@ -83,6 +87,7 @@ export default {
         spin: 'spin 0.5s linear',
         flipIn: 'flipIn 2.0s ease-out',
         wavingHand: 'wave 2s linear infinite',
+        zoomOutBlur: 'zoomOutBlur 1.5s ease-out',
       },
       backgroundImage: {
         'light-bg': 'radial-gradient(125% 125% at 50% 10%, #ffffff 40%, #63e 100%)',
