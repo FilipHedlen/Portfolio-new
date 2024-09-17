@@ -1,8 +1,8 @@
-import React from 'react'
+import { ContactSection } from '../../components/Contact/ContactSection'
 
 const ContactPage = () => {
   return (
-    <div className='min-h-screen'>ContactPage</div>
+    <ContactSection />
   )
 }
 
