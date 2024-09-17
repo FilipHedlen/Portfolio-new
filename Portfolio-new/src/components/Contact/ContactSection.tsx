@@ -62,7 +62,7 @@ export const ContactSection = () => {
                             Contact Information
                         </p>
                         <p className="mb-20">
-                            Feel free to contact me about anything!
+                            Feel free to contact me if you have any questions about anything, or if you just want to connect!
                         </p>
                         <div>
                             <ul className="mt-6 flex flex-col flex-wrap gap-y-6">
