@@ -14,13 +14,13 @@ const ProjectCards: React.FC<ProjectProps> = ({ title, description, techStack, i
     <article className="relative mx-auto max-w-xs sm:max-w-sm lg:max-w-md rounded-lg overflow-hidden shadow-xl bg-cover bg-center group cursor-pointer transform transition-transform duration-500 hover:-translate-y-2" style={{ backgroundImage: `url(${imgSrc})` }}>
       <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-75 transition-opacity duration-300"></div>
       <div className="relative p-6 sm:p-8 min-h-[20rem] flex flex-col justify-between text-center z-10">
-        <h1 className="text-white text-2xl sm:text-3xl mb-4 transform transition-transform duration-300">
+        <h1 className="text-light-grey text-2xl sm:text-3xl mb-4 transform transition-transform duration-300 font-lora font-bold">
           {title}
         </h1>
-        <p className="opacity-0 group-hover:opacity-80 text-white text-sm sm:text-xl mb-4 transform transition-opacity duration-500">
+        <p className="opacity-0 group-hover:opacity-80 text-light-grey text-sm sm:text-xl mb-4 transform transition-opacity duration-500 font-raleway">
           {description}
         </p>
-        <p className="opacity-0 group-hover:opacity-75 text-white text-sm sm:text-xl mb-4 transform transition-opacity duration-500">
+        <p className="opacity-0 group-hover:opacity-75 text-light-grey text-sm sm:text-xl mb-4 transform transition-opacity duration-500 font-lora">
           Tech stack: {techStack}
         </p>
         <div className="flex justify-center space-x-4 mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
