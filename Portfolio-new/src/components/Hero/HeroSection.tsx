@@ -25,13 +25,13 @@ export const HeroSection = () => {
             to="/projects"
             className="px-6 py-3 text-lg font-semibold font-raleway text-semi-light-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-cyan-dark dark:hover:bg-cyan-light"
           >
-            <span className="animate-slideIn">My Projects</span>
+            <span>My Projects</span>
           </Link>
           <Link
             to="/contact"
             className="px-6 py-3 text-lg font-semibold font-raleway text-semi-light-grey rounded-full shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105 hover:bg-green-dark dark:hover:bg-green-light"
           >
-            <span className="animate-slideIn">Contact me</span>
+            <span>Contact me</span>
           </Link>
         </nav>
       </div>
