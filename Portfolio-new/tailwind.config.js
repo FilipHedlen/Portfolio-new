@@ -30,8 +30,8 @@ export default {
       },
       keyframes: {
         flipIn: {
-          '0%': {transform: 'rotateX(90deg)', opacity: '0' },
-          '100%': { transform: 'rotateX(0deg)',opacity: '1' },
+          '0%': { transform: 'rotateX(90deg)', opacity: '0' },
+          '100%': { transform: 'rotateX(0deg)', opacity: '1' },
         },
         spin: {
           '0%': { transform: 'rotate(0deg)' },

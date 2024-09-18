@@ -1,12 +1,12 @@
-import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa"
-import { IoIosMail } from "react-icons/io"
-import ContactForm from "./ContactForm"
+import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import ContactForm from "./ContactForm";
 import { FaRegHandPointDown } from "react-icons/fa6";
 
 export const ContactSection = () => {
   const contactMethods = [
-		{
-      icon:
+    {
+      icon: (
         <a
           href="mailto:filip.hedlen@gmail.com"
           target="_blank"
@@ -14,47 +14,43 @@ export const ContactSection = () => {
         >
           <IoIosMail className="text-dark-grey dark:text-light-grey text-2xl hover:text-primary-light-hover hover:dark:text-primary-dark-hover" />
         </a>
-      ,
-      contact: 
-        "filip.hedlen@gmail.com"
+      ),
+      contact: "filip.hedlen@gmail.com",
     },
     {
-      icon:
+      icon: (
         <FaPhoneAlt className="text-dark-grey dark:text-light-grey text-2xl hover:text-primary-light-hover hover:dark:text-primary-dark-hover" />
-      ,
-      contact: 
-        "+46 762733899"
+      ),
+      contact: "+46 762733899",
     },
-	  {
-		  icon:
-				<a
-					href="https://github.com/FilipHedlen"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<FaGithub className="text-dark-grey dark:text-light-grey text-2xl hover:text-primary-light-hover hover:dark:text-primary-dark-hover" />
-				</a>
-			,
-			contact:
-			  "Github"
-		},
-		{
-			icon:
-				<a
-					href="https://www.linkedin.com/in/filip-hedl%C3%A9n-04b489252/"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<FaLinkedin className="text-dark-grey dark:text-light-grey text-2xl hover:text-primary-light-hover hover:dark:text-primary-dark-hover" />
-				</a>
-			,
-			contact:
-				"LinkedIn"
-		},
-  ]
+    {
+      icon: (
+        <a
+          href="https://github.com/FilipHedlen"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub className="text-dark-grey dark:text-light-grey text-2xl hover:text-primary-light-hover hover:dark:text-primary-dark-hover" />
+        </a>
+      ),
+      contact: "Github",
+    },
+    {
+      icon: (
+        <a
+          href="https://www.linkedin.com/in/filip-hedl%C3%A9n-04b489252/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin className="text-dark-grey dark:text-light-grey text-2xl hover:text-primary-light-hover hover:dark:text-primary-dark-hover" />
+        </a>
+      ),
+      contact: "LinkedIn",
+    },
+  ];
 
   return (
-    <main className="py-14">
+    <main className="py-14 animate-slideIn">
       <div className="max-w-screen-xl mx-auto px-4 text-dark-grey dark:text-light-grey md:px-8">
         <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none lg:space-x-12">
           <div className="max-w-lg space-y-3">
@@ -62,7 +58,7 @@ export const ContactSection = () => {
               Contact Information
             </p>
             <p className="font-lora">
-              Feel free to contact me with any inquires, or if you just want to connect!<br></br>
+              Feel free to contact me with any inquiries, or if you just want to connect!<br />
               You can use the contact form or just check the information below 
               <FaRegHandPointDown className="inline-block ml-1" />
             </p>
