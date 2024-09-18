@@ -38,9 +38,9 @@ export default {
           '100%': { transform: 'rotate(360deg)' },
         },
         colorChange: {
-          '0%': { color: '#e91e63' },
-          '50%': { color: '#00bcd4' },
-          '100%': { color: '#e91e63' },
+          '0%': { color: '#0097a7' },
+          '50%': { color: '#4caf50' },
+          '100%': { color: '#0097a7' },
         },
         bounceLight: {
           '0%': { transform: 'translateY(0)' },
