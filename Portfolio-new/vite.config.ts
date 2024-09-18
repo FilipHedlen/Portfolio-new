@@ -6,7 +6,7 @@ import { qrcode } from 'vite-plugin-qrcode';
 export default defineConfig({
   plugins: [react(), qrcode()],
   
-  base: '/Portfolio-new',
+  base: '/',
   
   build: {
     outDir: 'dist',
