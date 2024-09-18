@@ -67,4 +67,12 @@ export const projects = [
     imgSrc: '/planningpoker.png',
     codeLink: 'https://github.com/FilipHedlen/planning-poker-billy',
   },
+  {
+    id: 9,
+    title: 'This Portfolio',
+    description: 'Individual Portfolio project',
+    techStack: 'React, TypeScript, Tailwind, Vite, React-slick',
+    imgSrc: '/portfolio.png',
+    codeLink: 'https://github.com/FilipHedlen/Portfolio-new',
+  }
 ]
