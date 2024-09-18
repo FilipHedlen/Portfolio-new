@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa"
 import { IoIosMail } from "react-icons/io"
 import ContactForm from "./ContactForm"
+import { FaRegHandPointDown } from "react-icons/fa6";
 
 export const ContactSection = () => {
   const contactMethods = [
@@ -57,14 +58,16 @@ export const ContactSection = () => {
       <div className="max-w-screen-xl mx-auto px-4 text-dark-grey dark:text-light-grey md:px-8">
         <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none lg:space-x-12">
           <div className="max-w-lg space-y-3">
-            <p className="text-dark-grey dark:text-light-grey text-3xl font-semibold sm:text-4xl font-raleway">
+            <p className="text-dark-grey dark:text-light-grey text-3xl font-semibold sm:text-4xl font-raleway mb-10">
               Contact Information
             </p>
-            <p className="mb-6 font-lora">
-              Feel free to contact me if you have any questions about anything, or if you just want to connect!
+            <p className="font-lora">
+              Feel free to contact me with any inquires, or if you just want to connect!<br></br>
+              You can use the contact form or just check the information below 
+              <FaRegHandPointDown className="inline-block ml-1" />
             </p>
-            <div>
-              <ul className="mt-6 flex flex-col flex-wrap gap-y-6 font-lora">
+            <div className="">
+              <ul className="mt-10 flex flex-col flex-wrap gap-y-6 font-lora">
                 {contactMethods.map((item, idx) => (
                   <li key={idx} className="flex items-center gap-x-3">
                     <div>{item.icon}</div>
