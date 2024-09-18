@@ -16,10 +16,10 @@ const ProjectsCarousel: React.FC = () => {
 
   return (
     <section className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center xl:mt-16 mt-20 z-10 animate-zoomOutBlur">
-      <div className="relative w-full flex items-center justify-center">
+      <div className="w-full flex items-center justify-center">
         <button
           onClick={handlePrev}
-          className="text-4xl sm:text-5xl text-dark-grey dark:text-light-grey hover:text-primary-light-hover dark:hover:text-primary-dark-hover transition duration-100 p-2 sm:p-4 absolute left-2 sm:left-6 hidden sm:block"
+          className="z-10 text-4xl sm:text-5xl text-dark-grey dark:text-light-grey hover:text-primary-light-hover dark:hover:text-primary-dark-hover transition duration-100 p-2 sm:p-4 absolute left-2 sm:left-6 hidden sm:block"
           aria-label="Previous Slide"
         >
           ❮
