@@ -29,7 +29,7 @@ const ProjectCards: React.FC<ProjectProps> = ({ title, description, techStack, i
               href={liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 hover:bg-blue-600 text-white rounded-full px-4 py-2 text-xs sm:text-sm font-semibold transition duration-300"
+              className="bg-cyan-dark hover:bg-green-dark text-light-grey rounded-full px-4 py-2 text-xs sm:text-sm font-bold font-raleway shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105"
             >
               Live
             </a>
@@ -39,8 +39,8 @@ const ProjectCards: React.FC<ProjectProps> = ({ title, description, techStack, i
               href={codeLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-700 hover:bg-gray-800 text-white rounded-full px-4 py-2 text-xs sm:text-sm font-semibold transition duration-300"
-            >
+              className="bg-green-dark hover:bg-cyan-dark text-light-grey rounded-full px-4 py-2 text-sm sm:text-sm font-bold font-raleway shadow-md transition-transform duration-500 ease-in-out transform hover:scale-105"
+            > 
               Code
             </a>
           )}
